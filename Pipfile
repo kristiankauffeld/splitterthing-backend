@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+python-multipart = "*"
+pydantic-settings = "*"
+demucs = {git = "git+https://github.com/facebookresearch/demucs#egg=demucs"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
