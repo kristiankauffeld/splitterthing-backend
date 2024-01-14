@@ -1,7 +1,8 @@
 FROM python:3.11
-WORKDIR /app
 
+WORKDIR /app
 RUN pip install -U pip && pip install pipenv
+COPY ./requirements.txt ./
 COPY Pipfile Pipfile.lock ./
 RUN pipenv install --system --deploy
 COPY ./src ./src
